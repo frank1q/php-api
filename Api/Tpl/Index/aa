@@ -1,0 +1,1 @@
+ /usr/lib/jvm/java-1.7.0/jre/bin/java -jar "/commjava/lib/socket_php.jar" 8080 "/commjava/ini/B2CMerchant.xml" "/commjava/log/socket.log"&

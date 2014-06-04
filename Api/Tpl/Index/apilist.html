@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>api测试</title>
+	<link rel="stylesheet" href="<{$myPublic}>/Css/bootstrap.min.css" />
+	<link rel="stylesheet" href="<{$myPublic}>/Css/style.css" />
+	<script src="<{$myPublic}>/Js/jquery.min.js"></script>
+	<script src="<{$myPublic}>/Js/bootstrap.min.js"></script>
+	<script src="<{$myPublic}>/Js/api.js"></script>
+	<script>var url = "__URL__";</script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="center">百百来API测试系统</h1>
+		<ul class="nav nav-pills nav-justified">
+		  <li><a href="__APP__">api测试</a></li>
+		  <li class="active"><a href="__URL__/apilist">固定api</a></li>
+		  <notempty name="Think.session.uid">
+		  <li>
+			<a href="javascript:void(0);"><{$Think.session.username}></a>
+		  </li>	
+		  <li>
+			<a href="__URL__/quit">退出</a>
+		  </li>	
+		  <else />
+		  <li>
+		  	<a href="__URL__/login">登陆</a>
+		  </li>
+		 </notempty>
+		</ul>
+		<div class="content buttonlist">
+			<div class="row">
+				<a href="__URL__/loginljmm"><button type="button" class="btn btn-info">登陆卢家妈妈</button></a>
+				
+
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
