@@ -4,7 +4,7 @@
 class IndexAction extends CommAction {
     
     public function index(){
-        dump(11111);
+        $this->display();
     }
 
 }
