@@ -1,44 +1,60 @@
-
-/*
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-*/
-
-body {
-    font-family: "Microsoft YaHei", "微软雅黑", "SimSun", "宋体" !important;
-    /*font-size: 13px;*/
-	margin: 0;
-	padding: 0;
-	font-size: 14px;
+body{
+	background:#999;
+	font-size: 12px;
+	font-family: '微软雅黑'!important;
 }
-h1{
-
-	font-family: "Microsoft YaHei", "微软雅黑", "SimSun", "宋体" !important;
-	margin-bottom: 40px;
-	margin-top: 40px;
-}
-.content{
-	margin-top: 20px;
-}
-.center{
-	text-align: center;
-}
-form label{
-	text-align: right;
-}
-#apiHis a:hover{
-	background: #fff !important;
+*:focus {outline: none;} 
+input{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	background-color: transparent !important;
+	background:none !important; 
 }
 
-.buttonlist a{
+input:-webkit-autofill { 
+	
+} 
+.bodylogin{
+	margin: 50px auto;
+	background:url(../images/login_body.jpg) no-repeat center top;
+	width: 700px;
+	height: 501px;
+	overflow: auto;
+}
+
+
+.logo{
+	background:#fff;
+	width:200px;
+	height:50px;
+	margin: 100px auto 122px;
+}
+.login{
+	margin-left: 190px;
+	overflow: hidden;
+}
+.clr{
+	clear: both;
+}
+.login div{
 	float: left;
-	margin-bottom: 20px;
-	margin-left: 20px;
 }
-.loginform{
-	margin:50px 30%;
-	padding: 50px 100px 35px;
-	border: 1px solid #ccc;
-	box-shadow: 3px 1px 1px #ccc;
+.un{
+	margin-left: 40px;
+}
+.pwd{
+	margin-top: 22px;
+}
+.pw{
+	margin-left: 50px;
+}
+.dl{
+	margin-top: 24px;
+	margin-left: 285px;
+}
+.dl input{
+	cursor: pointer;
+	width: 50px;
+	text-align: left;
 }
