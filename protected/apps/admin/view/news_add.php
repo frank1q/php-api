@@ -237,6 +237,16 @@ function tpchange()
             <td class="inputhelp">可选择前台显示的标题字体颜色</td>
           </tr>
           <tr>
+            <td align="right">排序：</td>
+            <td align="left"><input name="norder" id="norder" type="text" value="0" size="4"/></td>
+            <td class="inputhelp">排序值越小越靠前</td>
+          </tr>
+          <tbody id="extend"></tbody> 
+          <tr>
+            <td align="right">内容：</td>
+            <td align="left" colspan="2"><textarea name="content" id="content" style=" width:100%;height:450px;visibility:hidden;"></textarea><br><div id="saveimage" class="btn">图片本地化</div></td>
+          </tr>
+          <tr>
             <td align="right">状态：</td>
             <td align="left">
                 <input type="checkbox" name="ispass" value="1" checked>审核
@@ -268,10 +278,7 @@ function tpchange()
             <td align="left"><textarea cols="70" rows="5" name="description" id="description"></textarea></td>
             <td class="inputhelp">将被用来作description标签，用英文逗号隔开，留空时将根据内容自动生成</td>
           </tr>
-          <tr>
-            <td align="right">内容：</td>
-            <td align="left" colspan="2"><textarea name="content" id="content" style=" width:100%;height:450px;visibility:hidden;"></textarea><br><div id="saveimage" class="btn">图片本地化</div></td>
-          </tr>
+
           <tr>
             <td align="right">前台模型/方法：</td>
             <td align="left"><input type="text" value="default/column/content" name="method" id="method" size="20"></td>
@@ -286,12 +293,8 @@ function tpchange()
              </td>
             <td class="inputhelp">默认为模板路径下news_content.php<br><a style="color:green" href="{url('set/tpchange')}"> 管理模板 </a></td>
           </tr> 
-           <tbody id="extend"></tbody>
-           <tr>
-            <td align="right">排序：</td>
-            <td align="left"><input name="norder" id="norder" type="text" value="0" size="4"/></td>
-            <td class="inputhelp">排序值越大越靠前(不指定将按最新发表排序)</td>
-          </tr> 
+          
+
           <tr>
             <td align="right">点击：</td>
             <td align="left"><input name="hits" type="text" value="30" size="6"/></td>

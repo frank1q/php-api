@@ -1,7 +1,7 @@
 <?php
 defined('BASE_PATH') or define('BASE_PATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
 defined('CP_PATH') or define('CP_PATH', BASE_PATH. 'include'.DIRECTORY_SEPARATOR);
-defined('DEFAULT_APP') or define('DEFAULT_APP', 'default');
+defined('DEFAULT_APP') or define('DEFAULT_APP', 'admin');
 defined('DEFAULT_CONTROLLER') or define('DEFAULT_CONTROLLER', 'index');
 defined('DEFAULT_ACTION') or define('DEFAULT_ACTION', 'index');
 	
