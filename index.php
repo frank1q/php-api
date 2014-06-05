@@ -11,5 +11,6 @@
 
 	// tp的核心文件
 	require './ThinkPHP/ThinkPHP.php';
+	
 
 ?>
