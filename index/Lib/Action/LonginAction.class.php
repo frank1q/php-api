@@ -1,8 +1,10 @@
 <?php
 class LonginAction extends CommLoginAction {
-public function login(){
+    // 登录
+    public function login(){
     	$this->display();
     }
+    //处理登录
     public function doLogin(){
         $username=trim($_POST['username']);
 		$where['account'] = $username;
@@ -24,5 +26,11 @@ public function login(){
     	else{
     		$this->error('用户名不存在');
     	}
+    }
+
+    // 退出
+    public function quit(){
+        session('[destroy]'); // 销毁session
+        $this->redirect('login');
     }
 }

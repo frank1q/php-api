@@ -25,10 +25,10 @@ input:-webkit-autofill {
 
 
 .logo{
-	background:#fff;
-	width:200px;
-	height:50px;
-	margin: 100px auto 122px;
+	background:url(../images/logo.png);
+	width:250px;
+	height:88px;
+	margin: 100px auto 84px;
 }
 .login{
 	margin-left: 190px;
@@ -50,7 +50,7 @@ input:-webkit-autofill {
 	margin-left: 50px;
 }
 .dl{
-	margin-top: 24px;
+	margin-top: 25px;
 	margin-left: 285px;
 }
 .dl input{

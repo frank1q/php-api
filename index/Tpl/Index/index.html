@@ -29,13 +29,10 @@
 				</div>
 				<div class="col-md-8">
 					<ul class="nav nav-pills navi nav-justified">
-					  <li class="active"><a href="#">必读文档</a></li>
-
-					  <li><a href="#">api查看</a></li>
-					  <li><a href="#">文档说明</a></li>
-					  <li><a href="#">对象列表</a></li>
-					  <li><a href="#">错误码</a></li>
-					  <li><a href="#">历史记录</a></li>
+					  <volist name="jsArr" id="arr">
+					  	<li><a href="#"><{$arr.name}></a></li>
+					  </volist>
+					  <li><a href="__APP__/Longin/quit">退出</a></li>
 					</ul>
 				</div>
 			</div>
@@ -87,7 +84,7 @@
 
 				</div>
 				<div class="col-md-9">
-					1111111111111111
+					
 				</div>
 			</div>
 		</div>
