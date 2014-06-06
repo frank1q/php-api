@@ -244,13 +244,13 @@ function run(){
 		
 	try{
 		defined('__ROOT__') or define('__ROOT__', config('URL_HTTP_HOST') . rtrim(dirname($_SERVER["SCRIPT_NAME"]), '\\/'));
-		defined('__PUBLIC__') or define('__PUBLIC__', __ROOT__ . '/' . 'public');
+		defined('__PUBLIC__') or define('__PUBLIC__', __ROOT__ . '/' . 'public_admin');
 		defined('__UPLOAD__') or define('__UPLOAD__', __ROOT__ . '/' . 'upload');
 		require(BASE_PATH . 'base/extend/function.php');
 		
 		if(is_mobile() && config(TPL_TEMPLATE_PATH_MOBILE)) $tems=config(TPL_TEMPLATE_PATH_MOBILE);
 		else $tems=config(TPL_TEMPLATE_PATH);
-		defined('__PUBLICAPP__') or empty($tems)? define('__PUBLICAPP__', __ROOT__ . '/' . 'public/' . APP_NAME):define('__PUBLICAPP__', __ROOT__ . '/' . 'public/' . APP_NAME.'/'.$tems);
+		defined('__PUBLICAPP__') or empty($tems)? define('__PUBLICAPP__', __ROOT__ . '/' . 'public_admin/' . APP_NAME):define('__PUBLICAPP__', __ROOT__ . '/' . 'public/' . APP_NAME.'/'.$tems);
 		
 		spl_autoload_register( 'autoload' );
 		$controller = CONTROLLER_NAME . 'Controller';

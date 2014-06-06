@@ -160,7 +160,7 @@ class cpApp {
 		//__ROOT__和__PUBLIC__常用于图片，css，js定位，__APP__和__URL__常用于网址定位
 		
 		define('__ROOT__', substr($root, 0, -1));//当前入口所在的目录，后面不带 "/"
-		define('__PUBLIC__', __ROOT__ . '/' . 'public');
+		define('__PUBLIC__', __ROOT__ . '/' . 'public_admin');
 		
 		//如果开启了重写，则网址不包含入口文件名，如index.php
 		if ( $this->appConfig['URL_REWRITE_ON'] ) {
