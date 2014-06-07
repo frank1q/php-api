@@ -14,8 +14,11 @@ body {
 	/*background: #f1f1f1;*/
 	background: url('../Images/bodyBg.png') repeat;
 }
-.container{
-	margin-top: 20px;
+.containerr{
+	/*margin-top: 20px;*/
+	width: 980px;
+	/*min-width: 980px !important;*/
+	margin: 0 auto;
 }
 h1{
 
@@ -32,7 +35,7 @@ h1{
 	color: #fff;
 }
 .navi{
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 }
 
 .nav-pills>li.active>a,  .nav-pills>li.active>a:focus
