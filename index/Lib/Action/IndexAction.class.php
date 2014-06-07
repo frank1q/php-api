@@ -13,5 +13,12 @@ class IndexAction extends CommAction {
         $this->display();
 
     }
+    public function detail(){
+        $this->display();
+    }
+
+    public function inter(){
+        $this->display();
+    }
 
 }
