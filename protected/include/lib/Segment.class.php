@@ -34,7 +34,7 @@ class Segment {
       unset($twoname);
       unset($this->cn_two_name);
       unset($this->cn_one_name);
-      $dicfile = ROOT_PATH.'public/dict/dict.csv';
+      $dicfile = ROOT_PATH.'public_admin/dict/dict.csv';
       $fp = fopen($dicfile,'r');
       while($line = fgets($fp,64)){
         $ws = explode(' ',$line);

@@ -137,6 +137,13 @@ function preview(img, selection) { //剪切区域改变触发函数
             <td align="left" class="inputhelp">留空则采用栏目ID,用于url路径</td>
           </tr>
           <tr>
+            <td align="right"  width="100">方法：</td>
+            <td align="left">
+              <input type="text" name="method" id="ename" value="{$info['method']}">
+            </td>
+            <td align="left" class="inputhelp">Thinkphp调用的方法</td>
+          </tr>
+          <tr>
             <td align="right">封面图：</td>
             <td align="left">
             <input type="file" name="picture" id="picture" size="10"><input type="hidden" name="oldpicture" value="{$info['picture']}">

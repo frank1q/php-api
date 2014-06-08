@@ -323,7 +323,7 @@ class sortController extends commonController
 			$data['keywords']=in($_POST['keywords']);
 			$data['description']=in($_POST['description']);
 			$data['url']=intval($_POST['num']);
-			$data['method']='news/index';
+			$data['method']=$_POST['method'];
 			$data['tplist']=$_POST['tplist'].','.$_POST['cnlist'];
 			$data['norder']=intval($_POST['norder']);
 			$data['ifmenu']=intval($_POST['ifmenu']);
@@ -425,6 +425,7 @@ class sortController extends commonController
 			$data['description']=in($_POST['description']);
 			$data['url']=intval($_POST['num']);
 			$data['tplist']=$_POST['tplist'].','.$_POST['cnlist'];
+			$data['method'] = $_POST['method'];
 			if($info['cnlist']!=$_POST['cnlist']){//更换信息内容模板
                 model('news')->update("sort like '%$id' AND tpcontent='".$info['cnlist']."'","tpcontent='".$_POST['cnlist']."'");
 			}

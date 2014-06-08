@@ -58,6 +58,11 @@
             <td align="left" class="inputhelp">留空则采用栏目ID,用于url路径</td>
           </tr>
           <tr>
+            <td align="right">方法：</td>
+            <td align="left"><input type="text" name="method"  size="20"></td>
+            <td class="inputhelp">Thinkphp调用的方法</td>
+          </tr> 
+          <tr>
             <td align="right">封面图：</td>
             <td align="left"><input type="file" name="picture" id="picture" size="10"></td>
             <td class="inputhelp"></td>

@@ -24,6 +24,7 @@ var edcon='';
 	$('#sortcon').html('<div id="loading"></div>');
 	$.get("{url('sort/add')}", {sortaction : 'newsadd'},
    		 function(data){
+        
 		   $('#sortcon').html(data);
    	    });
   });

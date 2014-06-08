@@ -180,6 +180,7 @@ class newsController extends commonController
                         else $data['picture']=$this->nopic;
                 	}
              }else $data['picture']=$this->nopic;
+             exit;
 			if(model('news')->insert($data))
 			$this->success('资讯添加成功~',url('news/index'));
 			else $this->error('资讯添加失败');
