@@ -10,10 +10,10 @@ class NewsAction extends CommAction {
             else{
                 $where['path']=',000000';
             }
-            dump($_GET);
+            // dump($_GET);
             $where['ifmenu']='1';
             $sortArr = $sort->field('id,name,method,path')->where($where)->order('norder asc')->select();
-            dump($sortArr);
+            // dump($sortArr);
             foreach ($sortArr as $key => $value) {
                 // echo '<a href="'.__APP__.'/News/detail/path/'.$value['path'].'/id/'.$value['id'].'">'.$value['name'].'</a>';
                 $path = $value['path'];
@@ -43,7 +43,6 @@ class NewsAction extends CommAction {
             $detail = $sort->field('sort,title,description,content')->where($where) ->order('norder asc')->select();
             dump($detail);
             $this->assign('detail',$detail);
-            
             $this->display();
         
       }  

@@ -105,13 +105,14 @@ h1{
 	overflow: hidden;
 }
 .onetitle{
-	margin-bottom: 30px;
 	clear: both;
 	overflow: hidden;
 	margin-left:-15px;
 	margin-right:-15px;
 }
-
+.onetitle div{
+	margin-bottom: 30px;
+}
 .detail{
 	/*border: 10px solid #ebedef;*/
 	/*border-top-right-radius: 10px;*/
