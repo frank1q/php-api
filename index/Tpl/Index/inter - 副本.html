@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PHP-API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="__PUBLIC__/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="__PUBLIC__/css/flat-ui.css" rel="stylesheet">
+
+    <!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link href="__PUBLIC__/css/php-api.css" rel="stylesheet">
+  </head>
+  <body>
+<!-- nav -->
+<div class="navi">
+  <div class="container">
+    <div class="col-xs-2">
+    </div>
+    <div class="col-xs-10">
+      <nav role="navigation">
+        <div class="collapse navbar-collapse" id="navbar-collapse-01">
+          <ul class="nav navbar-nav navbar-left">           
+            <li><a href="#">Api修改记录</a></li>
+            <li><a href="#">Api查看</a></li>
+            <li><a href="#">必读文档</a></li>
+           </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav><!-- /navbar -->
+      
+    </div>
+
+  </div>
+</div>
+<!-- nav End -->
+<!-- go Top -->
+<a href="#" id="go_top" style="display: block;">&#xe015;</a>
+<!-- go Top End -->
+
+
+  <div class="wrapper">
+      <div class="container">
+        <div class="col-xs-2">
+            <div class="logo">
+              <img src="__PUBLIC__/images/logo.png" class="img-responsive">
+              <p>api文档系统</p>
+              <p>免费、快捷</p>
+            </div>
+          <ul class="nav nav-pills nav-stacked">
+            <li>
+              <a href="__URL__/index" class="">用户模块</a>
+            </li>
+            <li>
+              <a href="" class="">订单模块</a>
+            </li>
+            <li>
+              <a href="" class="">系统模块</a>
+            </li>
+            <li>
+              <a href="" class="">公共模块</a>
+            </li>
+            <li>
+              <a href="" class="">游戏模块</a>
+            </li>
+            <li>
+              <a href="" class="">文章模块</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-10 titlelist content">
+          <div class="contenttitle">
+            <div class="onetitle">
+              <div class="col-xs-2">
+                <a class="btn btn-primary btn-large btn-block" href="__URL__/detail">增加用户</a>
+              </div>
+              <div class="col-xs-2">
+                <a class="btn btn-info btn-large btn-block" href="__URL__/inter">接口详细</a>
+              </div>
+              <div class="col-xs-2">
+                <a class="btn btn-default btn-large btn-block" href="#">网站网页标题对网站重要性</a>
+              </div>
+              <div class="col-xs-2">
+                <a class="btn btn-danger btn-large btn-block" href="#">增加用户</a>
+              </div>
+              <div class="col-xs-2">
+                <a class="btn btn-success btn-large btn-block" href="#">增加用户</a>
+              </div>
+              <div class="col-xs-2">
+                <a class="btn btn-inverse btn-large btn-block" href="#">增加用户</a>
+              </div>
+            </div>
+            <div class="onetitle">
+              <div class="col-xs-2">
+                <a class="btn btn-primary btn-large btn-block" href="#">网站网页标题对网站重要性</a>
+              </div>
+              <div class="col-xs-2">
+                <a class="btn btn-info btn-large btn-block" href="#">增加用户</a>
+              </div>
+              <div class="col-xs-2">
+                <a class="btn btn-default btn-large btn-block" href="#">增加用户</a>
+              </div>
+              <div class="col-xs-2">
+                <a class="btn btn-danger btn-large btn-block" href="#">增加用户</a>
+              </div>
+              <div class="col-xs-2">
+                <a class="btn btn-success btn-large btn-block" href="#">增加用户</a>
+              </div>
+              <div class="col-xs-2">
+                <a class="btn btn-inverse btn-large btn-block" href="#">增加用户</a>
+              </div>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="">
+              <table class="table table-bordered table-hover">
+                <tr>
+                  <td>需求说明：</td>
+                  <td>一、网站中的每个页面都必须有不同的标题，<br>
+                      二、网页标题中要含有丰富的关键词.<br>
+                      三、标题必须跟网页中的描述和内容相关。<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>接口名称：</td>
+                  <td>增加用户</td>
+                </tr>
+                <tr>
+                  <td>URL</td>
+                  <td>https://api.weibo.com/2/search/suggestions/users.json</td>
+                </tr>
+                <tr>
+                  <td>HTTP请求方式</td>
+                  <td>GET</td>
+                </tr>
+                <tr>
+                  <td>是否需要登录</td>
+                  <td>是</td>
+                </tr>
+              </table>
+              <div class="request">
+                <h6>请求参数</h6>
+                <table class="table table-bordered table-hover">
+                  <tr>
+                    <th>名称</th>
+                    <th>是否必选</th>
+                    <th>请求方式</th>
+                    <th>类型</th>
+                    <th>说明</th>
+                  </tr>
+                  <tr>
+                    <td>source</td>
+                    <td>false</td>
+                    <td>POST</td>
+                    <td>string</td>
+                    <td>采用OAuth授权方式不需要此参数，其他授权方式为必填参数，数值为应用的AppKey。</td>
+                  </tr>
+                  <tr>
+                    <td>source</td>
+                    <td>false</td>
+                    <td>POST</td>
+                    <td>string</td>
+                    <td>采用OAuth授权方式不需要此参数，其他授权方式为必填参数，数值为应用的AppKey。</td>
+                  </tr>
+                  <tr>
+                    <td>source</td>
+                    <td>false</td>
+                    <td>POST</td>
+                    <td>string</td>
+                    <td>采用OAuth授权方式不需要此参数，其他授权方式为必填参数，数值为应用的AppKey。</td>
+                  </tr>
+                  <tr>
+                    <td>source</td>
+                    <td>false</td>
+                    <td>POST</td>
+                    <td>string</td>
+                    <td>采用OAuth授权方式不需要此参数，其他授权方式为必填参数，数值为应用的AppKey。</td>
+                  </tr>                  
+
+                </table>
+              </div>
+              <div class="return">
+                <h6>返回参数</h6>
+                <table class="table table-bordered table-hover">
+                  <tr>
+                    <th>名称</th>
+                    <th>是否必选</th>
+                    <th>请求方式</th>
+                    <th>类型</th>
+                    <th>说明</th>
+                  </tr>
+                  <tr>
+                    <td>source</td>
+                    <td>false</td>
+                    <td>POST</td>
+                    <td>string</td>
+                    <td>采用OAuth授权方式不需要此参数，其他授权方式为必填参数，数值为应用的AppKey。</td>
+                  </tr>
+                  <tr>
+                    <td>source</td>
+                    <td>false</td>
+                    <td>POST</td>
+                    <td>string</td>
+                    <td>采用OAuth授权方式不需要此参数，其他授权方式为必填参数，数值为应用的AppKey。</td>
+                  </tr>
+                  <tr>
+                    <td>source</td>
+                    <td>false</td>
+                    <td>POST</td>
+                    <td>string</td>
+                    <td>采用OAuth授权方式不需要此参数，其他授权方式为必填参数，数值为应用的AppKey。</td>
+                  </tr>
+                  <tr>
+                    <td>source</td>
+                    <td>false</td>
+                    <td>POST</td>
+                    <td>string</td>
+                    <td>采用OAuth授权方式不需要此参数，其他授权方式为必填参数，数值为应用的AppKey。</td>
+                  </tr>                  
+                </table>
+              </div>
+              <div class="error">
+                <h6>错误码</h6>
+                <table class="table table-bordered table-hover">
+                  <tr>
+                    <th>错误编号</th>
+                    <th>错误说明</th>
+                  </tr>
+                  <tr>
+                    <td>10001</td>
+                    <td>参数出错</td>
+                  </tr>
+                  <tr>
+                    <td>10002</td>
+                    <td>地址出错</td>
+                  </tr>
+                  <tr>
+                    <td>10003</td>
+                    <td>执行出错</td>
+                  </tr>
+
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+    <!-- Load JS here for greater good =============================-->
+    <script src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+    <script src="__PUBLIC__/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="__PUBLIC__/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/js/bootstrap-select.js"></script>
+    <script src="__PUBLIC__/js/bootstrap-switch.js"></script>
+    <script src="__PUBLIC__/js/flatui-checkbox.js"></script>
+    <script src="__PUBLIC__/js/flatui-radio.js"></script>
+    <script src="__PUBLIC__/js/jquery.tagsinput.js"></script>
+    <script src="__PUBLIC__/js/jquery.placeholder.js"></script>
+  </body>
+</html>
